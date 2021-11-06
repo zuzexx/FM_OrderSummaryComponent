@@ -1,3 +1,4 @@
+
 body{
     font-family: 'Caveat', cursive;
     font-family: 'Slabo 27px', serif;
@@ -19,5 +20,38 @@ body{
     background-color: white;
     width: 450px;
     border-radius: 20px;
+    display:grid;
 }
+.hero{grid-area:1/1/2/2;}
+.order{
+grid-area:2/1/3/2;
+font-weight: 900;
+color:hsl(223, 47%, 23%);
+}
+.paragraph{
+    grid-area:3/1/4/2;
+    justify-items:center;
+    place-self: center;
+}
+.plan{grid-area:4/1/5/2;}
+.button{
+    grid-area:5/1/6/2;
+    background-color:hsl(245, 75%, 52%);
+    color:white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 40px;
+    font-weight: 700;
+}
+.cancel{grid-area:6/1/7/2;}
 p{font-size: 16px;}
+/*#plan{
+    background-color:hsl(225, 100%, 94%);
+    display: grid;
+    border-radius: 10px;
+}
+.icon{grid-area:1/1/3/2;}
+.plan{grid-area: 1/2/2/3;}
+.monex{grid-area:2/2/3/3;}
+.change{grid-area:1/3/3/4;}*/
+

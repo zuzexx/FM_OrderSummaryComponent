@@ -7,6 +7,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Slabo+27px&display=swap" rel="stylesheet">
+  
   <title>Frontend Mentor | Order summary card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -18,20 +20,22 @@
 <body>
 
  
-  <div id="text"> <img id="hero" src="images/illustration-hero.svg" alt="">
+  <div id="text" class="text"> <img class="hero" id="hero" src="images/illustration-hero.svg" alt="">
 
- <h1> Order Summary</h1>
+ <h1 class="order"> Order Summary</h1>
 
-  <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+  <p class="paragraph">You can now listen to millions of songs, audiobooks, and podcasts on any 
   device anywhere you like!</p>
 
-  <div>Annual Plan</div>
-  <div>$59.99/year</div>
+<div class="plan" id="plan"> 
+  <img class="icon" src="images/icon-music.svg">
+   <div class="plan">Annual Plan</div>
+  <div class="monex">$59.99/year</div>
 
- <div> Change</div>
+ <div class="change"> Change</div></div>
 
-<button>  Proceed to Payment</button>
-  <div>Cancel Order</div>
+<button class="button">  Proceed to Payment</button>
+  <div class="cancel">Cancel Order</div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
