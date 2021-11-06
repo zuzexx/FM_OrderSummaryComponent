@@ -1,0 +1,7 @@
+body{
+    font-family: 'Caveat', cursive;
+    font-family: 'Slabo 27px', serif;
+    background-image:url("images/pattern-background-desktop.svg");
+    background-color:hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+}
