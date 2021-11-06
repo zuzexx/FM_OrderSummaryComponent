@@ -3,5 +3,21 @@ body{
     font-family: 'Slabo 27px', serif;
     background-image:url("images/pattern-background-desktop.svg");
     background-color:hsl(225, 100%, 94%);
+    background-size:cover;
     background-repeat: no-repeat;
+    background-position: center;
+    max-width: 500px;
+    margin:auto;
+    text-align: center;
+    padding: 10% ;
 }
+#hero{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#text{
+    background-color: white;
+    width: 450px;
+    border-radius: 20px;
+}
+p{font-size: 16px;}
