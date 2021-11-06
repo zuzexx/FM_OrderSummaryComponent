@@ -1,7 +1,6 @@
 
 body{
-    font-family: 'Caveat', cursive;
-    font-family: 'Slabo 27px', serif;
+    font-family: 'Red Hat Display', sans-serif;
     background-image:url("images/pattern-background-desktop.svg");
     background-color:hsl(225, 100%, 94%);
     background-size:cover;
@@ -10,7 +9,10 @@ body{
     max-width: 500px;
     margin:auto;
     text-align: center;
-    padding: 10% ;
+    padding-top: 5% ;
+}
+p{
+    font-size: 16px;
 }
 #hero{
     border-top-left-radius: 20px;
@@ -27,15 +29,13 @@ body{
 grid-area:2/1/3/2;
 font-weight: 900;
 color:hsl(223, 47%, 23%);
+margin-top: 40px;;
 }
 .paragraph{
     grid-area:3/1/4/2;
     justify-items:center;
     place-self: center;
     color:hsl(224, 23%, 55%);
-}
-.plan{
-    grid-area:4/1/5/2;
 }
 .button{
     grid-area:5/1/6/2;
@@ -47,31 +47,36 @@ color:hsl(223, 47%, 23%);
     margin-right: 40px;
     margin-top: 20px;
     font-weight: 700;
-    box-shadow: 10px 20px hsl(225, 100%, 98%);
+    box-shadow: 10px 20px 15px hsl(225, 100%, 94%);
     
 }
 .cancel{
-    padding:20px 20px;
+    padding:40px 40px;
     grid-area:6/1/7/2;
     color:hsl(224, 23%, 55%);
     font-weight: 700;
 }
-p{font-size: 16px;}
 .plan{
     background-color:hsl(225, 100%, 98%);
     border-radius:10px;
     margin-left: 40px;
     margin-right: 40px;
+    grid-area:4/1/5/2;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items:center;
+    height:100px;
 }
 .icon{
-    float:left;
-    margin-top: 25px;
+    justify-content: flex-start;
+    /*margin-top: 25px;*/
     margin-left: 10px;
 }
 .change{
-    float:right;
-    margin-bottom: 40px;
-    margin-right: 20px;
+    justify-content: flex-end;
+   /* margin-bottom: 40px;*/
+    margin-left: 120px;
     color: hsl(245, 75%, 52%);
     text-decoration: underline;
     font-weight: 700;
@@ -79,13 +84,16 @@ p{font-size: 16px;}
 .aplan{
     color:hsl(223, 47%, 23%);
     font-weight: 900;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 .monex{
     color:hsl(224, 23%, 55%);
 }
 .together{
-    float: left;
-    margin-left:40px;
+    justify-content: center;
+    margin-left:20px;
+    flex-direction: row;
 }
 :hover .change{
     cursor: pointer;
