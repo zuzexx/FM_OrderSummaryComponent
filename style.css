@@ -23,6 +23,7 @@ p{
     width: 450px;
     border-radius: 20px;
     display:grid;
+    position: static;
 }
 .hero{grid-area:1/1/2/2;}
 .order{
@@ -36,17 +37,19 @@ margin-top: 40px;;
     justify-items:center;
     place-self: center;
     color:hsl(224, 23%, 55%);
+    font-weight: 500;
 }
 .button{
     grid-area:5/1/6/2;
     background-color:hsl(245, 75%, 52%);
     color:white;
     border-radius: 10px;
-    padding: 20px 20px;
+    padding: 15px 20px;
     margin-left: 40px;
     margin-right: 40px;
     margin-top: 20px;
     font-weight: 700;
+    font-size: 16px;
     box-shadow: 10px 20px 15px hsl(225, 100%, 94%);
     
 }
@@ -54,7 +57,7 @@ margin-top: 40px;;
     padding:40px 40px;
     grid-area:6/1/7/2;
     color:hsl(224, 23%, 55%);
-    font-weight: 700;
+    font-weight: 900;
 }
 .plan{
     background-color:hsl(225, 100%, 98%);
@@ -105,4 +108,24 @@ margin-top: 40px;;
     cursor: pointer;
 }
 
+@media only screen and (max-width:375px){
+   body {
+       background-image:url("images/pattern-background-mobile.svg");
+       background-color:hsl(225, 100%, 94%);
+       background-size:cover;
+       background-repeat: no-repeat;
+       background-position: center;
+       max-width: 375px;
+       margin:auto;
+       text-align: center;
+}
+#text{
+    background-color: white;
+    max-width: 375px;
+    border-radius: 20px;
+    display:grid;
+    position:static;
+    margin:auto;
+}
 
+}
