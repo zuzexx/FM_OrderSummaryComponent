@@ -5,6 +5,15 @@
     @return map-get($font-weights, $weight-name);
 }
 
+@mixin bodyFlex($direction){
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25%;
+    margin-bottom: 25%;
+    flex-direction: $direction;
+}
+
 @mixin flexCenter($direction){
     display: flex;
     justify-content: center;
@@ -21,12 +30,18 @@
 
 @mixin mainBackground{
     background-color:$neutral1;
-    width:70%;
+    width:85vw;
     border-radius: 20px;
+}
+@mixin section{
+    background-color: hsl(225, 100%, 96%);
+    border-radius: 10px;
+    width: 90%;
 }
 
 body{
     @include background();
+    @include bodyFlex(column);
     background-image: url("/images/pattern-background-mobile.svg");
     background-color: $primary1;
 }
@@ -35,6 +50,8 @@ main{
     @include flexCenter(column);
     @include mainBackground();
     font-family: $font-family;
+    text-align: center;
+    max-height: 90vh;
 }
 
 .header{
@@ -46,4 +63,24 @@ main{
 h1{
     color: $neutral3;
     font-weight: weight(bold);
+    margin:30px;
+    font-size:$h1-font;
+}
+
+.paragraph{
+    width: 75%;
+    color: $neutral2;
+    font-weight: weight(regular);
+    line-height: 1.5rem;
+    font-size:$body-font;
+}
+
+section{
+    @include flexCenter(row);
+    @include section;
+    margin:30px;                                                                      
+}
+
+.mini-section{
+    @include flexCenter(column);
 }

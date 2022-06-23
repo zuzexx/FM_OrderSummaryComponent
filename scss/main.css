@@ -9,6 +9,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25%;
+  margin-bottom: 25%;
+  flex-direction: column;
   background-image: url("/images/pattern-background-mobile.svg");
   background-color: hsl(225deg, 100%, 94%);
 }
@@ -20,9 +26,11 @@ main {
   flex-direction: column;
   margin: auto;
   background-color: hsl(225deg, 100%, 98%);
-  width: 70%;
+  width: 85vw;
   border-radius: 20px;
   font-family: "Red Hat Display", sans-serif;
+  text-align: center;
+  max-height: 90vh;
 }
 
 .header {
@@ -34,4 +42,34 @@ main {
 h1 {
   color: hsl(223deg, 47%, 23%);
   font-weight: 900;
+  margin: 30px;
+  font-size: 25px;
+}
+
+.paragraph {
+  width: 75%;
+  color: hsl(224deg, 23%, 55%);
+  font-weight: 500;
+  line-height: 1.5rem;
+  font-size: 16px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: auto;
+  background-color: hsl(225deg, 100%, 96%);
+  border-radius: 10px;
+  width: 90%;
+  margin: 30px;
+}
+
+.mini-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
 }/*# sourceMappingURL=main.css.map */
