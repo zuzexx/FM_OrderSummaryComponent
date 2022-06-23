@@ -1,2 +1,11 @@
 @import "./variables";
 @import "./resets";
+
+@function weight($weight-name){
+    @return map-get($font-weights, $weight-name);
+}
+
+h1{
+    color: $neutral3;
+    font-weight: weight(bold);
+}
