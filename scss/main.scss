@@ -5,6 +5,44 @@
     @return map-get($font-weights, $weight-name);
 }
 
+@mixin flexCenter($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:$direction;
+    margin: auto;
+}
+
+@mixin background{
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+@mixin mainBackground{
+    background-color:$neutral1;
+    width:70%;
+    border-radius: 20px;
+}
+
+body{
+    @include background();
+    background-image: url("/images/pattern-background-mobile.svg");
+    background-color: $primary1;
+}
+
+main{
+    @include flexCenter(column);
+    @include mainBackground();
+    font-family: $font-family;
+}
+
+.header{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width:100%;
+}
+
 h1{
     color: $neutral3;
     font-weight: weight(bold);

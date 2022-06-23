@@ -2,6 +2,33 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/images/pattern-background-mobile.svg");
+  background-color: hsl(225deg, 100%, 94%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  background-color: hsl(225deg, 100%, 98%);
+  width: 70%;
+  border-radius: 20px;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.header {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
 }
 
 h1 {
