@@ -6,16 +6,11 @@
 }
 
 @mixin body(){
-    //display:flex;
-    //align-items: center;
-    //justify-content: center;
-    //margin-top: 25%;
-    //margin-bottom: 25%;
-   // flex-direction: $direction;
-   position: absolute;
-left: 50%;
-top: 50%;
-transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
 }
 
 @mixin flexCenter($direction){
@@ -33,6 +28,7 @@ transform: translate(-50%, -50%);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
+    background-attachment:fixed;
 }
 
 @mixin mainBackground{
@@ -60,9 +56,9 @@ body{
     background-color: $primary1;
 
     @include desktop(){
-        
-        background-color: red;
+        //background-color: red;
         background-image: url("/images/pattern-background-desktop.svg");
+        
     }
 }
 
@@ -113,7 +109,7 @@ h1{
 
 .mini{
     @include flexCenter(column);
-    margin-left:-100px;
+    margin-left:-90px;
     margin-top: -15px;
     margin-bottom: -10px;
 
@@ -134,7 +130,7 @@ h1{
     font-weight: weight(medium);
     color: $primary2;
     text-decoration: underline;
-    margin:10px;
+    margin:20px;
 
     &:hover{
         cursor: pointer;
@@ -142,6 +138,7 @@ h1{
 }
 
 button{
+    font-size: $body-font;
     color: $neutral1;
     background-color: $primary2;
     font-weight: weight(medium);
