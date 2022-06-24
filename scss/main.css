@@ -62,11 +62,12 @@ h1 {
   margin: auto;
   background-color: hsl(225deg, 100%, 96%);
   border-radius: 10px;
-  width: 90%;
+  width: 85%;
   margin: 30px;
 }
 .section .section_icon {
   width: 60px;
+  margin: 10px;
 }
 
 .mini {
@@ -75,6 +76,7 @@ h1 {
   align-items: center;
   flex-direction: column;
   margin: auto;
+  margin-left: 10px;
 }
 .mini .mini_plan {
   font-weight: 900;
@@ -89,7 +91,26 @@ h1 {
   font-weight: 700;
   color: hsl(245deg, 75%, 52%);
   text-decoration: underline;
+  margin: 10px;
 }
 .change:hover {
   cursor: pointer;
+}
+
+button {
+  color: hsl(225deg, 100%, 98%);
+  background-color: hsl(245deg, 75%, 52%);
+  font-weight: 700;
+  width: 85%;
+  border-radius: 10px;
+  height: 50px;
+  border: none;
+  box-shadow: 13px 25px 73px -13px hsl(224deg, 23%, 55%);
+}
+
+.cancel {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: hsl(224deg, 23%, 55%);
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */
