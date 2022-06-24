@@ -75,12 +75,37 @@ h1{
     font-size:$body-font;
 }
 
-section{
+.section{
     @include flexCenter(row);
     @include section;
-    margin:30px;                                                                      
+    margin:30px;   
+    
+    #{&}_icon{
+        width: 60px;
+    }
 }
 
-.mini-section{
+.mini{
     @include flexCenter(column);
+
+#{&}_plan{
+    font-weight: weight(bold);
+    color: $neutral3;
 }
+
+#{&}_money{
+    font-weight: weight(medium);
+    color: $neutral2;
+}
+}
+
+.change{
+    font-weight: weight(medium);
+    color: $primary2;
+    text-decoration: underline;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+

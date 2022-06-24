@@ -54,7 +54,7 @@ h1 {
   font-size: 16px;
 }
 
-section {
+.section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,11 +65,31 @@ section {
   width: 90%;
   margin: 30px;
 }
+.section .section_icon {
+  width: 60px;
+}
 
-.mini-section {
+.mini {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: auto;
+}
+.mini .mini_plan {
+  font-weight: 900;
+  color: hsl(223deg, 47%, 23%);
+}
+.mini .mini_money {
+  font-weight: 700;
+  color: hsl(224deg, 23%, 55%);
+}
+
+.change {
+  font-weight: 700;
+  color: hsl(245deg, 75%, 52%);
+  text-decoration: underline;
+}
+.change:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
